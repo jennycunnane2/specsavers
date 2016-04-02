@@ -82,3 +82,74 @@ filter: alpha(opacity=100);
 color: #808080;
 }
 
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 86px;
+}
+header a {
+  cursor: pointer;
+  float: left;
+}
+header .reset-button,
+header .reset-button:visited {
+  display: none;
+  float: right;
+  margin: 18px 24px;
+  border: 2px solid White;
+  border-radius: 3px;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 1.275em;
+  color: White;
+  transition: all 0.12s linear;
+}
+header .reset-button:hover,
+header .reset-button:focus {
+  border-color: White;
+  background: White;
+  color: Tomato;
+}
+header h2 {
+  padding: 12px 36px;
+  color: White;
+}
+.feedback-bar {
+  height: 0;
+  overflow: hidden;
+  background: #007038;
+  text-align: center;
+  transition: height 0.12s linear;
+}
+.feedback-bar h2 {
+  font-weight: lighter;
+}
+.show-feedback {
+  height: 86px;
+}
+.progress-bar {
+  background: -moz-linear-gradient(-135deg, Tomato, #663399);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, Tomato), color- stop(100%, #663399));
+  background: -webkit-linear-gradient(-135deg, Tomato, #663399);
+  background: -o-linear-gradient(-135deg, Tomato, #663399);
+  background: -ms-linear-gradient(-135deg, Tomato, #663399);
+}
+.progress-bar h2 {
+  font-weight: normal;
+}
+.progress-bar .step-1 {
+  display: block;
+}
+main .step-1 {
+  display: block;
+}
+
+
+.step-1,
+.step-2,
+.step-3,
+.step-4 {
+  display: none;
+}

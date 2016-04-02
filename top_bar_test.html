@@ -12,6 +12,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
+            <link href="css/carousel-feedback-delete.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -24,9 +25,43 @@
 </head>
 
 <body>
-    <header>
-        <div class="header"> <img src="img/header_img-lg.png" alt="header-image"> </div>
-    </header>
+<!-- <header class="progress-bar">
+  <a class="step-1" onclick="scrollTo('main > .step-1');"><h2>Destination</h2></a>
+  <a class="step-2" onclick="scrollTo('main > .step-2');"><h2>Dates</h2></a>
+  <a class="step-3" onclick="scrollTo('main > .step-3');"><h2>Guests</h2></a>
+  <a class="reset-button" onclick="reset();">Reset</a>
+</header>-->
+<header class="feedback-bar">
+  <h2 class="step-1">Make time for breakfast tacos. AUS</h2>
+  <h2 class="step-2">March 6th to 8th, looks good.</h2>
+  <h2 class="step-3">Thursday it is</h2>
+</header>
+
+<!--<main>
+  <section class="step-1">
+    <div class="button-center">
+      
+    </div>
+  </section>
+  <section class="step-2">
+    <div class="button-center">
+      <a onclick="completeStep(2);">March 6th</a>
+    </div>
+  </section>
+  <section class="step-3">
+    <div class="button-center">
+      <a onclick="completeStep(3);showReset();">1 Adult</a>
+    </div>
+  </section>
+  <section class="step-4">
+    <div class="button-center">
+      <i class="fa fa-plane"></i>
+    </div>
+  </section>
+</main>-->
+
+<div class="header"> <img src="img/header_img-lg.png" alt="header-image"> </div>
+
     <section class="main col-theme section-bg">
         <div>
             <div class="container">
@@ -75,7 +110,7 @@
                     <input placeholder="Postcode/city/town" class="form-control" type="text" name="search" value="" maxlength="128">
                     <div class="input-group-btn"> <a class="btn btn-green-theme btn form-submit" href="index_2.html">Find</a> </div>
                 </div>
-                <div class="sub-text" id="pick-date">
+                <div class="sub-text" id="pick-date"> <a onclick="completeStep(1);" class="btn btn-green-theme btn form-submit">Austin, Tx</a>
                     <a href="#" class="col-theme"> <i class="fa fa-location-arrow"></i> Find your nearest</a>
                 </div>
             </div>
@@ -86,74 +121,94 @@
             <div class="row">
                     <div class="intro">
                         <h1>When would you like to come in?</h1>
-                     
+                        <h2></h2>
 
                        </div> 
                     </div> 
-                        <div class="row centered">
-                         <h3>Next 7 days</h3>
-                            <ul class="calendar-wrapper">
-                            <li class="col-xs-1">
-                            </li>
-                                <li class="col-xs-3">
-                                 
-                                    <ul class="calendar">
+                        <div class="row">
+    <div class="col-sm-12">
+      <div class="carousel slide media-carousel-xs visible-xs" id="media-xs">
+        <div class="carousel-inner">
+         
+          
+          <div class="item">
+            <div class="row">
+              <div class="col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x100&amp;text=SLIDE2"></a>
+              </div>          
+              <div class="col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x100&amp;text=SLIDE2"></a>
+              </div>
+              <div class="col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x100&amp;text=SLIDE2"></a>
+              </div>
+            </div>
+          </div>  
+ 
+        </div>
+        <a data-slide="prev" href="#media-xs" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media-xs" class="right carousel-control">›</a>
+        </div>   
+      
+      <div class="carousel slide media-carousel-up hidden-xs" data-interval="false"  id="media-up">
+        <div class="carousel-inner" >
+          <div class="item  active">
+            <div class="row">
+                   
+              <div class="col-xs-2">
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Tomorrow</span> <span class="day">5</span> <span class="week">Monday</span> </div></a>
+              </div>
+              <div class="col-xs-2">
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Wednesday</span> <span class="day">6</span> <span class="week">Monday</span> </div></a>
+              </div>
+              <div class="col-xs-2">
+                 <a class="thumbnail" href="#" onclick="completeStep(1);"> <div class="icon shading"> <span class="month">Thursday</span> <span class="day">7</span> <span class="week">Monday</span> </div></a>
+              </div>          
+              <div class="col-xs-2">
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Friday</span> <span class="day">8</span> <span class="week">Monday</span> </div></a>
+              </div>
+              <div class="col-xs-2">
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Saturday</span> <span class="day">9</span> <span class="week">Monday</span> </div></a>
+              </div>
+               <div class="col-xs-2">
+                <a class="thumbnail "> <div class="icon shading"> <span class="month">Tuesday</span> <span class="day">10</span> <span class="week">Monday</span> </div></a>
+              </div>    
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="row">
+              <div class="col-xs-2">
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Wednesday</span> <span class="day">11</span> <span class="week">Monday</span> </div></a>
+              </div>          
+              <div class="col-xs-2">
+                  <a class="thumbnail" href="#" > <div class="icon shading"> <span class="month">Thursday</span> <span class="day">12</span> <span class="week">Monday</span> </div></a>
+              </div>
+              <div class="col-xs-2">
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Friday</span> <span class="day">13</span> <span class="week">Monday</span> </div></a>
+              </div>
+              <div class="col-xs-2">
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Saturday</span> <span class="day">14</span> <span class="week">Monday</span> </div></a>
+              </div>          
+              <div class="col-xs-2">
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Sunday</span> <span class="day">15</span> <span class="week">Monday</span> </div></a>
+              </div>
+              <div class="col-xs-2">
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Monday</span> <span class="day">16</span> <span class="week">Monday</span> </div></a>
+              </div>
+            </div>
+          </div>  
+ 
+        </div>
+         <a data-slide="next" href="#media-up" class="right carousel-control">›</a>
+      </div>
+    </div>
+  </div>
 
-                                        <li class="col-xs-6">
-                                        <a href="#" class="block-link">
-                                            <div class="icon shading"> <span class="month">June</span> <span class="day">8</span> <span class="week">Monday</span> </div>
-                                            </a>
-                                        </li>
-                                        <li class="col-xs-6">
-                                         <a href="#" class="block-link">
-                                            <div class="icon shading"> <span class="month">June</span> <span class="day">9</span> <span class="week">Tuesday</span> </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                   
-                                </li>
-                                <li class="col-xs-4">
-                                    <ul class="calendar">
-
-                                        <li class="col-xs-4">
-                                             <a href="#" class="block-link">
-                                            <div class="icon shading"> <span class="month">June</span> <span class="day">10</span> <span class="week">Wednesday</span> </div>
-                                             </a>
-                                            </li>
-                                            <li class="col-xs-4">
-                                             <a href="#" class="block-link">
-                                                <div class="icon shading"> <span class="month">June</span> <span class="day">11</span> <span class="week">Thursday</span> </div>
-                                                 </a>
-                                            </li>
-                                            <li class="col-xs-4">
-                                             <a href="#" class="block-link">
-                                                <div class="icon shading"> <span class="month">June</span> <span class="day">12</span> <span class="week">Friday</span> </div>
-                                                </a>
-                                            </li>
-                                      </ul>
-                                    </li>
-                                    <li class="col-xs-3">
-                                        <ul class="calendar">
-                                            <li class="col-xs-6">
-                                             <a href="#" class="block-link">
-                                                <div class="icon shading"> <span class="month">June</span> <span class="day">13</span> <span class="week">Saturday</span> </div>
-                                                 </a>
-                                            </li>
-                                            <li class="col-xs-6">
-                                             <a href="#" class="block-link">
-                                                <div class="icon shading"> <span class="month">June</span> <span class="day">14</span> <span class="week">Sunday</span> </div>
-                                                 </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                     <li class="col-xs-1">
-                            </li>
-                            </ul>
-                        </div>
-        
+  
         </div>
     </section>
-    <section class="main light-theme">
+    <section class="main grey-theme">
         <div>
             <div class="container">
                 <div class="row intro">
@@ -254,6 +309,50 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
+     <script type="text/javascript">
+    var currentStep = 1;
+var scrollSpeed = 300;
+var transitionSpeed = 150;
+var feedbackDuration = 1200;
+var scrollTo = function (element) {
+  $('html, body').animate({
+    scrollTop: $(element).offset().top
+  }, scrollSpeed);
+}
+var showFeedback = function (step) {
+  $('.feedback-bar').addClass('show-feedback');
+  $('.feedback-bar > h2').css('display', 'none');
+  $('.feedback-bar > .step-' + step).css('display', 'block');
+  setTimeout(function () {
+    $('.progress-bar > .step-' + (step + 1)).css('display', 'block');
+  }, transitionSpeed);
+  setTimeout(function () {
+    $('.feedback-bar').removeClass('show-feedback');
+  }, feedbackDuration);
+};
+var completeStep = function () {};
+completeStep = function (step) {
+  if(currentStep == step) {
+    showFeedback(step);
+    currentStep = step + 1;
+    $('main > .step-' + currentStep).css('display', 'block');
+  }
+  scrollTo('main > .step-' + (step + 1));
+};
+var showReset = function () {
+  setTimeout(function () {
+    $('.reset-button').css('display', 'block');
+  }, feedbackDuration);
+};
+var reset = function () {
+  currentStep = 1;
+  $('.progress-bar > a').not('.progress-bar > .step-1').css('display', 'none');
+  $('.feedback-bar > h2').css('display', 'none');
+  $('main > section').not('main > .step-1').css('display', 'none');
+};
+      
+    </script>
+
 </body>
 
 </html>
