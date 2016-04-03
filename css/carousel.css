@@ -63,15 +63,15 @@ margin-bottom:0;
   height: 22px;
   width : 22px;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -40px;
 }
 
 #media-xs .carousel-control,
 #media-up .carousel-control{
-position: absolute;
-bottom: 0;
-font-size: 14px;
-color: #808080;
+
+
+font-size:6em;
+color: #0c9551;
 text-shadow: 0 0 0;
 opacity: 1;
 filter: alpha(opacity=100);

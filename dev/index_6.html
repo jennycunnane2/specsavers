@@ -21,10 +21,22 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
+
+
 </head>
 
 <body>
+<div class="feedback-bar">
+<div class="container">
+<div class="row">
+  <div class="col-xs-12 centered"><span> Crouch End (<a href="#">change</a>)</span></div>
+   
+    </div>
+</div>
+</div>
+
     <header>
         <div class="header"> <img src="img/header_img-lg.png" alt="header-image"> </div>
     </header>
@@ -65,6 +77,7 @@
                                 </ul>
                             </div>
                         </div>
+
                         <div class="label-text centered"> <a href="#" class="col-theme">Next 3 stores  <i class="fa fa-chevron-right"></i></a> </div>
                     </div>
                 </div>
@@ -76,37 +89,52 @@
                     <input placeholder="Postcode/city/town" class="form-control" type="text" name="search" value="" maxlength="128">
                     <div class="input-group-btn"> <a class="btn btn-green-theme btn form-submit" href="index_2.html">Find</a> </div>
                 </div>
-                <div class="sub-text" id="pick-date">
+               
+                <div class="sub-text">
                     <a href="#" class="col-theme"> <i class="fa fa-location-arrow"></i> Find your nearest</a>
                 </div>
             </div>
         </div>
+          <a href="" id="scroll-test"></a>
     </section>
     <section class="main light-theme section-bg">
         <div class="container">
+
             <div class="row">
                     <div class="intro">
                         <h1>When would you like to come in?</h1>
-                        <h2></h2>
-
+              
+ <a href="" id="scroll-test"></a>
                        </div> 
                     </div> 
                         <div class="row">
     <div class="col-sm-12">
-      <div class="carousel slide media-carousel-xs visible-xs" id="media-xs">
+      <div class="carousel slide media-carousel-xs visible-xs" data-interval="false" id="media-xs">
         <div class="carousel-inner">
-         
+          <div class="item  active">
+            <div class="row">
+              <div class="col-xs-4">
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Tomorrow</span> <span class="day">5</span> <span class="week"><i class="fa fa-check"></i></span> </div></a>
+              </div>          
+              <div class="col-xs-4">
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Wednesday</span> <span class="day">6</span> <span class="week"><i class="fa fa-check"></i></span> </div></a>
+              </div>
+              <div class="col-xs-4">
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Thursday</span> <span class="day">7</span> <span class="week"><i class="fa fa-check"></i></span> </div></a>
+              </div>
+            </div>
+          </div>
           
           <div class="item">
             <div class="row">
               <div class="col-xs-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x100&amp;text=SLIDE2"></a>
+                    <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Friday</span> <span class="day">8</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>          
               <div class="col-xs-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x100&amp;text=SLIDE2"></a>
+                    <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Saturday</span> <span class="day">9</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
               <div class="col-xs-4">
-                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x100&amp;text=SLIDE2"></a>
+                    <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Sunday</span> <span class="day">10</span> <span class="week"><3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
             </div>
           </div>  
@@ -114,53 +142,54 @@
         </div>
         <a data-slide="prev" href="#media-xs" class="left carousel-control">‹</a>
         <a data-slide="next" href="#media-xs" class="right carousel-control">›</a>
-        </div>   
-      
+        </div> 
+
       <div class="carousel slide media-carousel-up hidden-xs" data-interval="false"  id="media-up">
         <div class="carousel-inner" >
           <div class="item  active">
             <div class="row">
                    
               <div class="col-xs-2">
-                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Tomorrow</span> <span class="day">5</span> <span class="week">Monday</span> </div></a>
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Tomorrow</span> <span class="day">5</span> <span class="week"> 2 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
               <div class="col-xs-2">
-                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Wednesday</span> <span class="day">6</span> <span class="week">Monday</span> </div></a>
+                 <a class="thumbnail"> <div class="icon shading"> <span class="month">Wednesday</span> <span class="day">6</span> <span class="week">4 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
               <div class="col-xs-2">
-                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Thursday</span> <span class="day">7</span> <span class="week">Monday</span> </div></a>
+                 <a class="thumbnail"  id="btn"> <div class="icon shading"> <span class="month">Thursday</span> <span class="day">7</span> <span class="week">5 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>          
               <div class="col-xs-2">
-                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Friday</span> <span class="day">8</span> <span class="week">Monday</span> </div></a>
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Friday</span> <span class="day">8</span> <span class="week">2 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
               <div class="col-xs-2">
-                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Saturday</span> <span class="day">9</span> <span class="week">Monday</span> </div></a>
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Saturday</span> <span class="day">9</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
                <div class="col-xs-2">
-                <a class="thumbnail "> <div class="icon shading"> <span class="month">Tuesday</span> <span class="day">10</span> <span class="week">Monday</span> </div></a>
+                <a class="thumbnail "> <div class="icon shading"> <span class="month">Tuesday</span> <span class="day">10</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>    
             </div>
+
           </div>
           
           <div class="item">
             <div class="row">
               <div class="col-xs-2">
-                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Wednesday</span> <span class="day">11</span> <span class="week">Monday</span> </div></a>
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Wednesday</span> <span class="day">11</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>          
               <div class="col-xs-2">
-                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Thursday</span> <span class="day">12</span> <span class="week">Monday</span> </div></a>
+                  <a class="thumbnail" href="#"> <div class="icon shading "> <span class="month">Thursday</span> <span class="day">12</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
               <div class="col-xs-2">
-                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Friday</span> <span class="day">13</span> <span class="week">Monday</span> </div></a>
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Friday</span> <span class="day">13</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
               <div class="col-xs-2">
-                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Saturday</span> <span class="day">14</span> <span class="week">Monday</span> </div></a>
+                  <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Saturday</span> <span class="day">14</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>          
               <div class="col-xs-2">
-                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Sunday</span> <span class="day">15</span> <span class="week">Monday</span> </div></a>
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Sunday</span> <span class="day">15</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
               <div class="col-xs-2">
-                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month">Monday</span> <span class="day">16</span> <span class="week">Monday</span> </div></a>
+                 <a class="thumbnail" href="#"> <div class="icon shading"> <span class="month"><i class="fa fa-check"></i></span> <span class="day">16</span> <span class="week">3 Free slots<i class="fa fa-check"></i></span> </div></a>
               </div>
             </div>
           </div>  
@@ -169,6 +198,24 @@
          <a data-slide="next" href="#media-up" class="right carousel-control">›</a>
       </div>
     </div>
+      <div>
+
+</div>
+ <div id="Create" style="display:none">
+<div class="row">
+
+ <div class="time slot">
+  <div class="intro">  <h1>What time of day are you thinking?</h1></div>
+  <div class="col-xs-4">
+     <div class="block-selector shading">Morning</div>    </div> 
+        <div class="col-xs-4"><div class="block-selector shading"> Afternoon</div> </div>
+    <div class="col-xs-4">  <div class="block-selector shading"> Evening</div></div>
+     
+
+   
+    </div>
+</div>
+</div>
   </div>
 
   
@@ -194,6 +241,8 @@
             </div>
         </div>
     </section>
+ 
+
     <footer class="global-footer">
         <div class="container text-center">
             <div class="row">
@@ -270,19 +319,36 @@
                 </div>
             </div>
         </div>
+
     </footer>
+       
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
      <script type="text/javascript">
-      $('.carousel').carousel({
-    pause: true,
-    interval: false
+   $(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#scroll-test').offset().top
+    }, 'slow');
 });
-
-      
     </script>
+           <script type="text/javascript">
+$(document).ready(function () {
+    $("#btn").click(function () {
+        $("#Create").toggle();
+    });
+});
+</script>
+<script type="text/javascript">
+  
+  $( function() {
+  $('td').click( function() {
+    $(this).toggleClass("active-time");
+  } );
+} );
+</script>
 
 </body>
 
