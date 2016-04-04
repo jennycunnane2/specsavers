@@ -20,6 +20,7 @@ header {
     background-image: url(../img/banner-bg.jpg);
     background-repeat: repeat-x;
 }
+
 .grey-theme {
     background-color: #ccc;
     color: #666;
@@ -31,6 +32,23 @@ header {
 .light-theme {
     background-color: #efefef;
     color: #666;
+}
+.light-grey-theme a
+{
+    color: #0c9551!important;
+
+}
+
+
+.grey-theme a
+{
+    color: #0c9551!important;
+
+}
+
+.light-theme a{
+    color: #0c9551!important;
+
 }
 .col-theme {
     background-color: #0c9551;
@@ -75,7 +93,12 @@ textarea {
     margin: 0 auto;
 }
 .top-spaced {
-    padding-top: 2em;
+    padding: 2em 0em;
+
+}
+
+.top-spaced img{
+   max-width: 100%;
 }
 /* responsive type framework*/
 
